@@ -4,6 +4,9 @@
 :root {
   --para-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --header-font: 'Source Serif Pro', serif;
+  --neon-color: #440BD4;
+  --link-color: #E92EFB;
+  --link-hover-color: #FF2079;
 }
 
 body {
@@ -17,11 +20,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #5badf0;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #0366d6;
+  color: var(--link-hover-color);
 }
 
 /* markdown content styles */
@@ -149,7 +152,7 @@ nav.navigation a {
   top: 8px;
   right: 6px;
   padding: 8px 12px;
-  color: #5badf0;
+  color: var(--link-color);
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
@@ -303,7 +306,7 @@ nav.navigation a.button {
 }
 
 #list-page .title a {
-  color: #404040;
+  color: var(--link-color);
   display: block;
 }
 
@@ -545,16 +548,21 @@ nav.navigation a.button {
       0 0 7px #fff,
       0 0 10px #fff,
       0 0 21px #fff,
-      0 0 42px #ff52ff,
-      0 0 82px #ff52ff,
-      0 0 92px #ff52ff,
-      0 0 102px #ff52ff,
-      0 0 151px #ff52ff;
-  font-family: var(--header-font), cursive;
+      0 0 42px #01fff4,
+      0 0 82px #01fff4,
+      0 0 92px #01fff4,
+      0 0 102px #01fff4,
+      0 0 151px #01fff4;
+  font-family: var(--header-font);
   font-size: 6.2rem;
   animation: pulsate 1.5s infinite alternate;
   padding: 0.4em;
   margin: 0;
+}
+
+.sub-header {
+  color: white;
+  font-family: var(--header-font);
 }
 
 @keyframes pulsate {
@@ -563,11 +571,11 @@ nav.navigation a.button {
       0 0 4px #fff,
       0 0 11px #fff,
       0 0 19px #fff,
-      0 0 40px #bc13fe,
-      0 0 80px #bc13fe,
-      0 0 90px #bc13fe,
-      0 0 100px #bc13fe,
-      0 0 150px #bc13fe;
+      0 0 40px var(--neon-color),
+      0 0 80px var(--neon-color),
+      0 0 90px var(--neon-color),
+      0 0 100px var(--neon-color),
+      0 0 150px var(--neon-color);
   }
   
   0% {
@@ -575,10 +583,10 @@ nav.navigation a.button {
     0 0 2px #fff,
     0 0 4px #fff,
     0 0 6px #fff,
-    0 0 10px #bc13fe,
-    0 0 45px #bc13fe,
-    0 0 55px #bc13fe,
-    0 0 70px #bc13fe,
-    0 0 80px #bc13fe;
+    0 0 10px var(--neon-color),
+    0 0 45px var(--neon-color),
+    0 0 55px var(--neon-color),
+    0 0 70px var(--neon-color),
+    0 0 80px var(--neon-color);
 }
 }

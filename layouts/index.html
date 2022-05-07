@@ -2,6 +2,7 @@
 {{ partial "profile.html" . }}
 
 <div id="list-page">
+    <h2 class="sub-header">What's on my mind:</h2>
     {{ $pages := .Site.RegularPages }}
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
