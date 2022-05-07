@@ -15,9 +15,7 @@
                       <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time>
                   </div>
                   <div class="title">
-                      <a href="{{ .RelPermalink }}">
-                          {{ .Title }}
-                      </a>
+                    <a href='{{ .RelPermalink }}'>{{ $title }}</a>
 <!-- We don't use tags right now, so we can keep this out.
                       {{ with .Params.tags }}
                           <div class="tags">
