@@ -103,6 +103,7 @@ p {
   margin-block-end: 1.5em;
   color: lightgray;
 }
+
 p,
 pre {
   word-break: normal;
@@ -335,7 +336,7 @@ nav.navigation a.button {
 }
 
 #list-page .summary {
-  color: #757575;
+  color: gray;
   margin-top: 12px;
   word-break: normal;
   overflow-wrap: anywhere;
@@ -575,6 +576,33 @@ nav.navigation a.button {
 .sub-header {
   color: white;
   font-family: var(--header-font);
+}
+
+button {
+  background-color: transparent;
+  color: var(--link-color);
+  border: solid 1px;
+  border-color: var(--link-color);
+  font-family: var(--para-font);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--neon-color);
+  border-color: var(--neon-color);
+}
+
+input, textarea {
+  width: 350px;
+}
+
+label {
+  color: gray;
+}
+
+textarea {
+  height: 100px;
 }
 
 @keyframes pulsate {
