@@ -4,9 +4,9 @@
 :root {
   --para-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --header-font: 'Source Serif Pro', serif;
-  --neon-color: #440BD4;
+  --neon-color: #2EC0F9;
   --link-color: #E92EFB;
-  --link-hover-color: #440BD4;
+  --link-hover-color: #2EC0F9;
 }
 
 body {
@@ -84,7 +84,11 @@ tr:nth-child(odd)>td {
   background: #fcfcfc;
 }
 
-h1 {
+h2 {
+  font-size: 1.3rem;
+}
+
+h1, h2 {
   color: white;
   font-family: var(--header-font);
 }
@@ -97,6 +101,7 @@ h3 {
 p {
   margin-block-start: 1.5em;
   margin-block-end: 1.5em;
+  color: lightgray;
 }
 p,
 pre {
@@ -306,6 +311,7 @@ nav.navigation a.button {
   color: #404040;
   font-size: 1.1rem;
   font-weight: 400;
+  font-family: var(--para-font);
   margin: 0;
   /* width: 80%; f */
 }
